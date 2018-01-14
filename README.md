@@ -16,7 +16,7 @@ To build OpenYandere you'll need Unity 2018.1.0b2 and NET 4.6 framework.
 
 1. NPC
 	- [ ] Talk
-		- [ ] Show dialogue box.
+		- [x] Show dialogue box.
 		- [ ] Show the dialogue choices
 			- [ ] Compliment
 				- [ ] Increase player's reputation by one point.

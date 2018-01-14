@@ -4715,7 +4715,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 137404591736235902}
   _attachTransform: {fileID: 4222004035940856}
-  _NPC: {fileID: 114476926328503522}
+  _npc: {fileID: 114476926328503522}
+  _dialogueBoxAnimator: {fileID: 0}
 --- !u!135 &135981748367628120
 SphereCollider:
   m_ObjectHideFlags: 1
