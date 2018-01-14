@@ -1,0 +1,24 @@
+#################
+## Unity
+#################
+obj/
+Temp/
+Library/
+
+#################
+## MonoDevelop
+#################
+*.userprefs
+
+#################
+## Rider
+#################
+.idea/
+Assets/Plugins/Editor/JetBrains
+
+##################
+## Visual Studio
+##################
+.vs/
+*.sln
+*.csproj
