@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using OpenYandere.UI.TalkCanvas;
 using System.Collections.Generic;
 using OpenYandere.UI.Interactions;
 using OpenYandere.Characters.Interactions;
@@ -9,9 +10,11 @@ namespace OpenYandere.Managers
     internal class UIManager : MonoBehaviour
     {
         private ObjectPoolManager _objectPoolManager;
-        
         private readonly Dictionary<KeyCode, Interactable> _registeredInteractables = new Dictionary<KeyCode, Interactable>();
-		
+
+	    [Header("References:")]
+	    public DialogueBox DialogueBox;
+	    
 		private void Awake()
 		{
 			_objectPoolManager = GameManager.Instance.ObjectPoolManager;

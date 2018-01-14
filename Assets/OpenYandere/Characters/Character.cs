@@ -3,7 +3,7 @@
 namespace OpenYandere.Characters
 {
 	[RequireComponent(typeof(CharacterAnimator))]
-	internal abstract class Character : MonoBehaviour
+	public abstract class Character : MonoBehaviour
 	{
 		public enum GenderType { Male, Female }
 		public enum ClubType { None }

@@ -85,8 +85,7 @@ namespace OpenYandere.Characters.Interactions
             }
             else
             {
-                var registeredInteractable = _uiManager.GetInteractable(PromptKeyCode);
-            
+                var registeredInteractable = _uiManager.GetInteractable(PromptKeyCode);            
                 var playerPosition = _playerManager.Player.transform.position;
             
                 // The distance from the player to this interactable.
