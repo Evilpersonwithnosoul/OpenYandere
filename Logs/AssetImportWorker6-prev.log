@@ -1,0 +1,649 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '2023.3.0a5 (184a44300b92) revision 1591876'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'pt' Physical Memory: 32634 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+B:\Program Files\Unity\Hub\Editor\2023.3.0a5\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+B:/Felipe Gomes/Documents/Unity Projects/OpenYandere
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+54693
+-job-worker-count
+9
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: B:/Felipe Gomes/Documents/Unity Projects/OpenYandere
+B:/Felipe Gomes/Documents/Unity Projects/OpenYandere
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15736] Host "[IP] 192.168.15.20 [Port] 0 [Flags] 2 [Guid] 2895634943 [EditorId] 2895634943 [Version] 1048832 [Id] WindowsEditor(7,Rotwang) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15736] Host "[IP] 192.168.15.20 [Port] 0 [Flags] 2 [Guid] 2895634943 [EditorId] 2895634943 [Version] 1048832 [Id] WindowsEditor(7,Rotwang) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 4.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.3.0a5 (184a44300b92)
+[Subsystems] Discovering subsystems at path B:/Program Files/Unity/Hub/Editor/2023.3.0a5/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path B:/Felipe Gomes/Documents/Unity Projects/OpenYandere/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2487)
+    Vendor:   NVIDIA
+    VRAM:     12124 MB
+    Driver:   31.0.15.3758
+Initialize mono
+Mono path[0] = 'B:/Program Files/Unity/Hub/Editor/2023.3.0a5/Editor/Data/Managed'
+Mono path[1] = 'B:/Program Files/Unity/Hub/Editor/2023.3.0a5/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'B:/Program Files/Unity/Hub/Editor/2023.3.0a5/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: B:/Program Files/Unity/Hub/Editor/2023.3.0a5/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001709 seconds.
+- Loaded All Assemblies, in  0.398 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.274 seconds
+Domain Reload Profiling: 672ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (150ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (147ms)
+			TypeCache.Refresh (146ms)
+				TypeCache.ScanAssembly (132ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (274ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.916 seconds
+Refreshing native plugins compatible for Editor in 3.83 ms, found 2 plugins.
+URP-HighFidelity-Renderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at ./Library/PackageCache/com.unity.render-pipelines.universal@17.0.0/Runtime/ScriptableRendererData.cs:257)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at ./Library/PackageCache/com.unity.render-pipelines.universal@17.0.0/Runtime/ScriptableRendererData.cs:145)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@17.0.0/Runtime/ScriptableRendererData.cs Line: 257)
+
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-OpenYandere
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.979 seconds
+Domain Reload Profiling: 1894ms
+	BeginReloadAssembly (343ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (490ms)
+		LoadAssemblies (414ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (198ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (129ms)
+			BuildScriptInfoCaches (38ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (979ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (726ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (392ms)
+			ProcessInitializeOnLoadMethodAttributes (221ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 5.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 192 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4882 unused Assets / (5.2 MB). Loaded Objects now: 5565.
+Memory consumption went from 176.5 MB to 171.3 MB.
+Total: 19.087500 ms (FindLiveObjects: 0.815200 ms CreateObjectMapping: 1.119500 ms MarkObjects: 13.076300 ms  DeleteObjects: 4.075000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 58310.993559 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_120_l_c.mat
+  artifactKey: Guid(2f35499b580d76d4c8f416f98a56310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_120_l_c.mat using Guid(2f35499b580d76d4c8f416f98a56310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e75651035a614a8e41e876685c21485') in 0.3485118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_120_m_c.mat
+  artifactKey: Guid(c399b6fb7ba94a84a91b886a2f2f1fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_120_m_c.mat using Guid(c399b6fb7ba94a84a91b886a2f2f1fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '191548e55928f56fc7894dc0b128faef') in 0.0082752 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.464613 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_300_m_c.mat
+  artifactKey: Guid(ca8a5cfc24b88ab448e20dba90e95814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_300_m_c.mat using Guid(ca8a5cfc24b88ab448e20dba90e95814) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cbe1cec5c56f04509cd21635412c05c') in 0.0075255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_310_l_c.mat
+  artifactKey: Guid(587e9b7bd4c222e44828f30d56a9f55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_310_l_c.mat using Guid(587e9b7bd4c222e44828f30d56a9f55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29dead033c6a913c7468e25ee8d6a06e') in 0.0086795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_320_h_c.mat
+  artifactKey: Guid(ab5c481e4b93f384194dc12403ee9aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_320_h_c.mat using Guid(ab5c481e4b93f384194dc12403ee9aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2235334dbd4333e41c06520bf9b183e') in 0.0072217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.168061 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_320_m_s.mat
+  artifactKey: Guid(05c7d96d16f77b14a9983e1e43aee39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_blazer_320_m_s.mat using Guid(05c7d96d16f77b14a9983e1e43aee39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cced93f1ad2cbfcc2b50d2ddf40ea976') in 0.0082262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_10_h_c.mat
+  artifactKey: Guid(bad746a22bd98504785e6c4f04e4ae4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_10_h_c.mat using Guid(bad746a22bd98504785e6c4f04e4ae4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23e16a92d8e4366f92c154f98fdf5395') in 0.008372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_gymclothes_00_m_c.mat
+  artifactKey: Guid(9e8b3936acc14074bb01eff8fab69040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_gymclothes_00_m_c.mat using Guid(9e8b3936acc14074bb01eff8fab69040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b45708467e45aa443bfbe96541b86131') in 0.0145132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_leotard_01_h_c.mat
+  artifactKey: Guid(471394929ab95e24b99090047f5e4ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_leotard_01_h_c.mat using Guid(471394929ab95e24b99090047f5e4ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '694b9e96d5d5a8432795687f75f91228') in 0.0087993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_00_m_s.mat
+  artifactKey: Guid(04df29d9f2ea5af429b2b98f366204ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_00_m_s.mat using Guid(04df29d9f2ea5af429b2b98f366204ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96a7c04592c115f252af7dd021ad20da') in 0.0134745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_naked_00_h_s.mat
+  artifactKey: Guid(6bf0aa8b8ca49d249980407339fa366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_naked_00_h_s.mat using Guid(6bf0aa8b8ca49d249980407339fa366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2cc3633a35ef0d670dc7851ab4db9d91') in 0.0094542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_10_l_s.mat
+  artifactKey: Guid(6413c171f7653c147847446722763b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_casualwear_10_l_s.mat using Guid(6413c171f7653c147847446722763b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '825a55efa4c285050ba97eb606639385') in 0.0086138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_leotard_00_h_s.mat
+  artifactKey: Guid(e48c761f9d7827f4c91638d0a493b7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_leotard_00_h_s.mat using Guid(e48c761f9d7827f4c91638d0a493b7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70662d12f57699ad1083bb5441e27db9') in 0.0079023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_pajamas_00_m_s.mat
+  artifactKey: Guid(003c446bd4943064c945ad83f1c52f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_pajamas_00_m_s.mat using Guid(003c446bd4943064c945ad83f1c52f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9c772ff627682af53fe73825bf4e613') in 0.0167763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_naked_00_m_s.mat
+  artifactKey: Guid(43065548bc251aa49b89e508e85b1fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_naked_00_m_s.mat using Guid(43065548bc251aa49b89e508e85b1fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6991bdbc262ac4f195f4a493d94e55e') in 0.0157144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_gymclothes_00_h_c.mat
+  artifactKey: Guid(360a7c7b8c257fc47b41dd47dbeefe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_gymclothes_00_h_c.mat using Guid(360a7c7b8c257fc47b41dd47dbeefe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f1d6e2d2630c216d59b8a6168589fff') in 0.010387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077117 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_h_c.mat
+  artifactKey: Guid(dafe7d41a7e9088409e3eb34c99cd2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_h_c.mat using Guid(dafe7d41a7e9088409e3eb34c99cd2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87cd22f5d3179b3bd2041ad27dd6ba38') in 0.0072079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_m_s.mat
+  artifactKey: Guid(8b5b4975855a02c4e83dd95eb665203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_m_s.mat using Guid(8b5b4975855a02c4e83dd95eb665203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1b9049d4dff18565413d24809c6c970') in 0.0071077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_100_m_s.mat
+  artifactKey: Guid(e4f1a2ff72bb64d4386c1f1d70ace63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_100_m_s.mat using Guid(e4f1a2ff72bb64d4386c1f1d70ace63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c84d1b858ff7d1430f31a1a1cc6cc5cd') in 0.0076081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_l_c.mat
+  artifactKey: Guid(3eab8204359bbcd4fb4518d035d796fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_010_l_c.mat using Guid(3eab8204359bbcd4fb4518d035d796fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '584edace294e47a9581ba082f8d6ad62') in 0.0082104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_110_h_s.mat
+  artifactKey: Guid(ad138554dd2b3cf4b8f7576abccf349b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_110_h_s.mat using Guid(ad138554dd2b3cf4b8f7576abccf349b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6f87f9feb73d323e193f5caa2476f81') in 0.0063702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000853 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_110_m_s.mat
+  artifactKey: Guid(c95de70165980a244850b844e38eee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_110_m_s.mat using Guid(c95de70165980a244850b844e38eee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe1054654b49b039de5506730f8c1d85') in 0.0074154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_200_l_c.mat
+  artifactKey: Guid(f3d4e28d92ae39146befbb51ec17a23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_200_l_c.mat using Guid(f3d4e28d92ae39146befbb51ec17a23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a411aecf15bcff710071c182eb3342c') in 0.0066066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_200_m_c.mat
+  artifactKey: Guid(dbeb64b852a90eb41b9f0d30d2ce8e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_200_m_c.mat using Guid(dbeb64b852a90eb41b9f0d30d2ce8e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b43947fa25360e06bcaccb8928ca21a') in 0.0064758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141823 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_210_l_s.mat
+  artifactKey: Guid(e48054106c936c44d8d2767c0682f3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_210_l_s.mat using Guid(e48054106c936c44d8d2767c0682f3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f48b5ccacee7f210811a10cc210dde8a') in 0.0071864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_220_h_s.mat
+  artifactKey: Guid(e8de06f877f35fe449fd538d4b4a15b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_220_h_s.mat using Guid(e8de06f877f35fe449fd538d4b4a15b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd982a873819d0088447f116c4b75800') in 0.0079188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_300_m_s.mat
+  artifactKey: Guid(47305cd5f9d366745a4d84de3d9fcd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_300_m_s.mat using Guid(47305cd5f9d366745a4d84de3d9fcd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '856f2719124178a4f9f17efdd5c946bc') in 0.0067368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_310_l_s.mat
+  artifactKey: Guid(ece90334cfc259344a86c06581b298ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_310_l_s.mat using Guid(ece90334cfc259344a86c06581b298ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '871717ac03ea1a63f8179152ec7baf66') in 0.0075011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_300_l_c.mat
+  artifactKey: Guid(5967ffc2f6cfcbe458d62ba10d0fe7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_300_l_c.mat using Guid(5967ffc2f6cfcbe458d62ba10d0fe7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a49fa692016db080e4f8dfcf847a94d') in 0.0067441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_320_l_c.mat
+  artifactKey: Guid(27a1e8fedf53a2246b83639fd5cb02a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_schoolwear_320_l_c.mat using Guid(27a1e8fedf53a2246b83639fd5cb02a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73abe334cf71fb61a5e5140995459008') in 0.0069956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_00_l_s.mat
+  artifactKey: Guid(b71410c104d12c143ad0973f374a82bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_00_l_s.mat using Guid(b71410c104d12c143ad0973f374a82bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba706d1f19e3796f243d78b60fe663c7') in 0.0067719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_00_h_c.mat
+  artifactKey: Guid(f0b592090ece9b145a3ca76ef376c87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_00_h_c.mat using Guid(f0b592090ece9b145a3ca76ef376c87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a24c8f3159538bcbd00cb0f656c7c3b6') in 0.0076301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131781 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_20_h_c.mat
+  artifactKey: Guid(6474a9ab8b0204c4e8e999e5e17aa915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_20_h_c.mat using Guid(6474a9ab8b0204c4e8e999e5e17aa915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c71e2bbba7b43651a1f11eace5baf816') in 0.0075502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_30_l_c.mat
+  artifactKey: Guid(16b7bfd452fa3d54385d316100a39591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_30_l_c.mat using Guid(16b7bfd452fa3d54385d316100a39591) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b047f4ad0e0f1c3aaf974319d43b0f7') in 0.007147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_30_h_s.mat
+  artifactKey: Guid(2a072405ec28fa246b0f4bae538a9df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_swimwear_30_h_s.mat using Guid(2a072405ec28fa246b0f4bae538a9df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58e504e9847025ba43c007fdb177cf5d') in 0.0076789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_uniform_00_l_s.mat
+  artifactKey: Guid(a9aa327af1a177747bbe76021e49e234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Materials/f02_uniform_00_l_s.mat using Guid(a9aa327af1a177747bbe76021e49e234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12eac13d14e14117669d18f5eb65f34c') in 0.0067791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.445489 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_schoolwear_210_h.png
+  artifactKey: Guid(ced6dc99ba81eec438c87e508ca4ec67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_schoolwear_210_h.png using Guid(ced6dc99ba81eec438c87e508ca4ec67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f17cb90f86c28c9546ba073e510b551') in 0.0263108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_10_l.png
+  artifactKey: Guid(a6208f33eb7a8ff479ae9937cd541063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_10_l.png using Guid(a6208f33eb7a8ff479ae9937cd541063) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e71627201295e3083ad18acfe30083e6') in 0.0272096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_30_h.png
+  artifactKey: Guid(4b770094d7b7fd449b5a3f7b48f471f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_30_h.png using Guid(4b770094d7b7fd449b5a3f7b48f471f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ca1246b1d3f4677497ec2097437fa86') in 0.0143508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_schoolwear_320_l.png
+  artifactKey: Guid(330abaec1462a3b4d8e33944e16f4513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_schoolwear_320_l.png using Guid(330abaec1462a3b4d8e33944e16f4513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c38cd5f988bb8405022cd74e52cbdec7') in 0.0179808 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_00_m.png
+  artifactKey: Guid(dd13cc98cb8ca754a9cca5b41fd628f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_00_m.png using Guid(dd13cc98cb8ca754a9cca5b41fd628f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f68275083a6894194d74bbf567a83582') in 0.0139779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_20_l.png
+  artifactKey: Guid(bf6197154f95969439654418e6b56a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_20_l.png using Guid(bf6197154f95969439654418e6b56a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e90c338399edd9f4f74e58c36aee0e69') in 0.0110951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_00_h.png
+  artifactKey: Guid(1a8479cd7e4649c4897c42be51bed3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/_Textures/f02_swimwear_00_h.png using Guid(1a8479cd7e4649c4897c42be51bed3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c91a35ab2934a7c78fcf27c2cf154e91') in 0.0113061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.026613 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_bathtowel_00_h.fbx
+  artifactKey: Guid(960814bf0c6055e48ac57eafe9cd4ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_bathtowel_00_h.fbx using Guid(960814bf0c6055e48ac57eafe9cd4ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b0f23074155cc13340713569c8d054f') in 0.0568309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_010_m.fbx
+  artifactKey: Guid(b508fa712539db142a23265b810940d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_010_m.fbx using Guid(b508fa712539db142a23265b810940d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fd2f4895c0e250a37a8dd5545fe68c1') in 0.026663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_200_m.fbx
+  artifactKey: Guid(841b1a6535d59174e811f57ed144038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_200_m.fbx using Guid(841b1a6535d59174e811f57ed144038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8112800f296ba4e9121a8b3b8bed52c8') in 0.0266425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_010_l.fbx
+  artifactKey: Guid(24b6b09cdc2009540a8b21992e4e61df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_010_l.fbx using Guid(24b6b09cdc2009540a8b21992e4e61df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83b9061f9d2f24769684d185d549b9f9') in 0.027796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_bathtowel_01_h.fbx
+  artifactKey: Guid(377dc962dcfb64c46bc1a259806b91c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_bathtowel_01_h.fbx using Guid(377dc962dcfb64c46bc1a259806b91c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6693ef8c0fd5b86a392c1b6843866628') in 0.0263019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_320_l.fbx
+  artifactKey: Guid(5f3503cbfde6e404b8684dfd2980d901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_320_l.fbx using Guid(5f3503cbfde6e404b8684dfd2980d901) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ad5d366a244d452502db7c5fa30d1b7') in 0.0275582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_200_l.fbx
+  artifactKey: Guid(0e952e11459f45c4aba5ce489e43af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_200_l.fbx using Guid(0e952e11459f45c4aba5ce489e43af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f16e48fd10f0a2e939699cb8edea95e3') in 0.0206041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_320_m.fbx
+  artifactKey: Guid(eea00a14061eb184fa99a4c854911c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_320_m.fbx using Guid(eea00a14061eb184fa99a4c854911c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91c8d8a685f0732aa3e7c25363d3fdf8') in 0.0274574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_100_l.fbx
+  artifactKey: Guid(707a07da424eca5489e124c1aedcb38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_100_l.fbx using Guid(707a07da424eca5489e124c1aedcb38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cde4f5e5ad7d09aad300c057c9136ddc') in 0.0315634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_120_l.fbx
+  artifactKey: Guid(15a6e037ee38b9942a6d0587cf71764c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_120_l.fbx using Guid(15a6e037ee38b9942a6d0587cf71764c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f20875cba9458bfc8ca2bb5fc0ea7af') in 0.025359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_210_m.fbx
+  artifactKey: Guid(ae5935e026b5bd04eae000bed26caecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenYandere/Models/Characters/Aoi/Mecanim/Models/f02_blazer_210_m.fbx using Guid(ae5935e026b5bd04eae000bed26caecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efd7b0242e06d57bd665d82ebfddf85c') in 0.0244258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
