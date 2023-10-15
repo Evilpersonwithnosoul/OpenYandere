@@ -6,7 +6,7 @@ using OpenYandere.Characters;
 using System.Collections.Generic;
 using OpenYandere.Characters.NPC;
 using OpenYandere.Characters.Player;
-
+using TMPro;
 namespace OpenYandere.UI.TalkCanvas
 {
     public class DialogueBox : MonoBehaviour
@@ -28,8 +28,7 @@ namespace OpenYandere.UI.TalkCanvas
 	    [Header("References:")]
 	    [SerializeField] private Animator _animator;
 	    [SerializeField] private Animator _choicesAnimator;
-	    [SerializeField] private TextMeshProUGUI _characterName;
-	    [SerializeField] private TextMeshProUGUI _dialogueText;
+	    [SerializeField] private TextMeshProUGUI _characterName, _dialogueText;
 	    
 	    private void Awake()
 	    {
@@ -45,9 +44,8 @@ namespace OpenYandere.UI.TalkCanvas
 			    if (_dialogueEntries.Count > 0)
 			    {
 				    DialogueEntry dialogueEntry = _dialogueEntries.Dequeue();
-				    
-				    _characterName.text = dialogueEntry.CharacterName;
-				    _dialogueText.text = dialogueEntry.Text; // TODO: Animate the text.
+					_characterName.SetText(dialogueEntry.CharacterName);
+					_dialogueText.SetText(dialogueEntry.Text);// TODO: Animate the text.
 			    }
 			    else
 			    {
@@ -91,8 +89,8 @@ namespace OpenYandere.UI.TalkCanvas
 
 	    public void SetText(string characterName, string dialogueText)
 	    {
-		    _characterName.text = characterName;
-		    _dialogueText.text = dialogueText;
+		    _characterName.SetText(characterName);
+		    _dialogueText.SetText(dialogueText);
 	    }
         
         public void OnComplimentButtonClicked()

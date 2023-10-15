@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using OpenYandere.Managers;
-
+using TMPro;
 namespace OpenYandere.UI.Interactions
 {
     internal class RadialPrompt : MonoBehaviour
@@ -23,8 +23,7 @@ namespace OpenYandere.UI.Interactions
         [Header("References:")]
         [SerializeField] private RectTransform _rectTransform;
         [SerializeField] private Image _loadingBar;        
-        [SerializeField] private TextMeshProUGUI _promptCharacter;
-        [SerializeField] private TextMeshProUGUI _promptText;
+        [SerializeField] private TextMeshProUGUI _promptCharacter, _promptText;
         
         private void Awake()
         {           
