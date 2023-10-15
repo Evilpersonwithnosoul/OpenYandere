@@ -14,20 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Settings:
     m_SettingsList: []
-    m_RuntimeSettings: []
   m_AssetVersion: 5
-  m_DefaultVolumeProfile: {fileID: 11400000, guid: 360d6b7c8cbe8bb41a451482f44060d4,
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: 4377c8fcb0d1dfe42a228b26e09d870c,
     type: 2}
   m_RenderingLayerNames:
-  - Light Layer default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
-  m_ValidRenderingLayers: 255
+  - Default
+  m_ValidRenderingLayers: 1
   lightLayerName0: Light Layer default
   lightLayerName1: Light Layer 1
   lightLayerName2: Light Layer 2
@@ -36,21 +28,9 @@ MonoBehaviour:
   lightLayerName5: Light Layer 5
   lightLayerName6: Light Layer 6
   lightLayerName7: Light Layer 7
-  apvScenesData:
-    m_ObsoleteSerializedBakingSets: []
-    sceneToBakingSet:
-      m_Keys: []
-      m_Values: []
-    bakingSets: []
-    sceneBounds:
-      m_Keys: []
-      m_Values: []
-    hasProbeVolumes:
-      m_Keys: []
-      m_Values: 
   m_ShaderStrippingSetting:
     m_Version: 0
-    m_ExportShaderVariants: 1
+    m_ExportShaderVariants: 0
     m_ShaderVariantLogLevel: 0
     m_StripRuntimeDebugShaders: 1
   m_URPShaderStrippingSetting:
