@@ -357,12 +357,12 @@ MonoBehaviour:
       m_Item7:
         transform: {fileID: 0}
         weight: 0
-    m_Offset: {x: 0, y: 0, z: 0}
-    m_MinLimit: -180
-    m_MaxLimit: 180
+    m_Offset: {x: 0, y: 1.5, z: 1}
+    m_MinLimit: -45
+    m_MaxLimit: 45
     m_AimAxis: 4
     m_UpAxis: 2
-    m_WorldUpType: 0
+    m_WorldUpType: 1
     m_WorldUpObject: {fileID: 0}
     m_WorldUpAxis: 2
     m_MaintainOffset: 0
@@ -488,7 +488,7 @@ Transform:
   m_GameObject: {fileID: 5930609491115151989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.086, y: 1.541, z: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6797,6 +6797,7 @@ MonoBehaviour:
   IsAlive: 1
   canTakeDamage: 1
   Gender: 1
+  headIKTarget: {fileID: 0}
   ragdollEnabler: {fileID: 9135519624775293076}
   Reputation: 0
   attackDamage: 10

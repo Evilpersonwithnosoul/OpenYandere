@@ -65,7 +65,15 @@ namespace OpenYandere.Managers
         public void EquipItem(ref ItemBase currentItem, ItemBase newItem, Transform equipPosition)
         {
             //PopupMessage.Instance.onDisplayMessage.Invoke($"Item {newItem.itemName} has been equipped");
-            PopupMessage.Instance.onDisplayMessage.Invoke($"Visibly armed.");
+            if (PopupMessage.Instance != null)
+            {
+                PopupMessage.Instance.onDisplayMessage.Invoke("Visibly armed.");
+            }
+            else
+            {
+                Debug.LogWarning("PopupMessage instance is null.");
+            }
+            
             if (newItem.itemPrefab == null)
             {
                 Debug.LogWarning($"Item {newItem.itemName} does not have an associated prefab.");

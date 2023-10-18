@@ -9,17 +9,15 @@ using DG.Tweening;
 
 internal class PopupMessage : Singleton<PopupMessage>
 {
-    public UnityEvent<string> onDisplayMessage = new UnityEvent<string>();
-    public CanvasGroup canvasGroup;
-    public static TextMeshProUGUI messageText;
-    public Image messageIcon;
+    public UnityEvent<string> onDisplayMessage = new();
+    protected RectTransform _rectTransform;
+    protected CanvasGroup _canvasGroup;
+    protected static TextMeshProUGUI messageText;
+    protected static Image messageIcon;
 
     public float displayTime = 2.3f;
-    private float timer;
-
-    private RectTransform _rectTransform;
-    private CanvasGroup _canvasGroup;
-    private bool isDisplaying = false;
+    protected float timer;
+    protected bool isDisplaying = false;
 
     void Awake()
     {
@@ -31,6 +29,8 @@ internal class PopupMessage : Singleton<PopupMessage>
             _canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
         _canvasGroup.alpha = 0;
+        messageText = GetComponentInChildren<TextMeshProUGUI>();
+        messageIcon = GetComponentInChildren<Image>();
     }
 
     void FixedUpdate(){
@@ -48,9 +48,10 @@ internal class PopupMessage : Singleton<PopupMessage>
     public void DisplayMessage(string message)
     {
         _rectTransform.anchoredPosition = new Vector2(0, 200);
+        _rectTransform.DOKill();
         _rectTransform.DOAnchorPosY(0, 0.5f).SetEase(Ease.OutQuad);
         _canvasGroup.DOFade(1, 0.5f);
-        messageText.text = message;
+        messageText.SetText(message);
         timer = displayTime;
         messageText.gameObject.SetActive(true);
         isDisplaying = true;

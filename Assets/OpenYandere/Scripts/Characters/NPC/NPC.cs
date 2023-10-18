@@ -71,9 +71,13 @@ namespace OpenYandere.Characters.NPC
             }
         }
 
-        private void OnDestroy()
+        protected void OnDestroy()
         {
-            ClockSystem.Instance.OnTimeChanged -= CheckActivity;
+            if (ClockSystem.Instance != null)
+            {
+                ClockSystem.Instance.OnTimeChanged -= CheckActivity;
+            }
+            
         }
 
         void DetectPlayer()

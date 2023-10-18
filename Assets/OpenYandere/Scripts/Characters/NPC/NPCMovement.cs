@@ -35,11 +35,12 @@ namespace OpenYandere.Characters.NPC
         
         private void FixedUpdate()
         {
+            IsRunning = _npc.isInDanger;
             HandleMovement();
         }
         protected void HandleMovement()
         {
-            IsRunning = _npc.isInDanger;
+
             // Get the current velocity of the navigation agent.
             var horizontalAxis = _navMeshAgent.velocity.x;
             var verticalAxis = _navMeshAgent.velocity.z;
@@ -75,19 +76,17 @@ namespace OpenYandere.Characters.NPC
         {
             // Direção básica de fuga.
             Vector3 fleeDirection = (transform.position - player.transform.position).normalized;
-
             // Adicionando variação aleatória à direção de fuga.
             float randomAngle = UnityEngine.Random.Range(-30f, 30f);
             fleeDirection = Quaternion.Euler(0, randomAngle, 0) * fleeDirection;
-
             // Distância variável de fuga.
             float fleeDistance = UnityEngine.Random.Range(5f, 15f);
-
             // Calculando a posição de fuga.
             Vector3 fleePosition = transform.position + fleeDirection * fleeDistance;
-
-            // Configurando o destino do agente para a posição de fuga.
+            var movementSpeed = IsRunning ? RunSpeed : WalkSpeed;
+            _navMeshAgent.speed = movementSpeed;
             _navMeshAgent.SetDestination(fleePosition);
+            _animatorData.IsRunning = IsRunning;
         }
 
         public void Resume()
