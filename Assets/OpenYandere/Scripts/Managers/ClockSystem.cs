@@ -10,20 +10,20 @@ namespace OpenYandere.Managers
 {
     internal class ClockSystem : Singleton<ClockSystem>
     {
-        private float timer = 0.0f;
-        private int hour = 0, minute = 0;
-        [SerializeField] private int startingHour;
-        [SerializeField] private bool clockEnabled = true, use24HourFormat = false;
-        [SerializeField, Range(0.0f, 10.0f)] private float clockSpeed;
+        protected float timer = 0.0f;
+        protected int hour = 0, minute = 0;
+        [SerializeField] protected int startingHour;
+        [SerializeField] protected bool clockEnabled = true, use24HourFormat = false;
+        [SerializeField, Range(0.0f, 10.0f)] protected float clockSpeed;
 
         public enum DayPhase { Morning, Afternoon, Evening, Night }
         public enum DayOfWeek { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
 
-        private DayOfWeek currentDay = DayOfWeek.Monday; // começar na segunda-feira por padrão
-        private DayPhase currentPhase = DayPhase.Morning;
+        protected DayOfWeek currentDay = DayOfWeek.Monday; // começar na segunda-feira por padrão
+        protected DayPhase currentPhase = DayPhase.Morning;
 
         //UI
-        [SerializeField] private TextMeshProUGUI clockTimeText, dayOfWeekText, phaseOfDayText;
+        [SerializeField] protected TextMeshProUGUI clockTimeText, dayOfWeekText, phaseOfDayText;
 
         //Events
         public delegate void ClockEvent();

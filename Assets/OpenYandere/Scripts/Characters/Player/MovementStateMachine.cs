@@ -9,7 +9,8 @@ namespace OpenYandere.Characters.Player
         None,
         Standing,
         Walking,
-        Running
+        Running,
+        Crouching
     }
     
     public class MovementStateMachine

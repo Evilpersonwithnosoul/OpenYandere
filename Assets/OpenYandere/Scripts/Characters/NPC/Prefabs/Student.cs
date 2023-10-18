@@ -2,6 +2,7 @@
 {
     internal class Student : NPC
     {
-        
+        public SOStudentPersonality personality;
+
     }
 }

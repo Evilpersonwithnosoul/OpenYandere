@@ -1,65 +1,60 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Pool;
+using static OpenYandere.Managers.ObjectPoolManager;
 
 namespace OpenYandere.Managers
 {
     internal class ObjectPoolManager : MonoBehaviour
     {
-        [Serializable]
+        [System.Serializable]
         internal class PoolEntry
         {
-            [Tooltip("The name that will be used to access the pooled objects.")]
             public string ObjectName;
-            [Tooltip("The prefab of the object to be pooled.")]
             public GameObject PrefabObject;
-            [Tooltip("The parent that the prefab should be a child of.")]
             public GameObject ParentObject;
-            [Tooltip("The number of objects to be pooled.")]
             public int PoolAmount;
-            [Tooltip("Can the pool grow if there are not enough objects?")]
             public bool AutomaticGrowth;
 
             [HideInInspector]
-            public List<GameObject> PooledObjects = new List<GameObject>();
+            public ObjectPool<GameObject> ObjectPooler;
         }
-        
+
         public List<PoolEntry> PoolEntries = new List<PoolEntry>();
-        private bool _isCoroutineActive;
-        
         public GameObject this[string name]
         {
             get
             {
-                PoolEntry poolEntry = PoolEntries.First(pooledObject => pooledObject.ObjectName == name);
+                PoolEntry poolEntry = PoolEntries.Find(pooledObject => pooledObject.ObjectName == name);
+                if (poolEntry == null || poolEntry.ObjectPooler == null) return null;
 
-                if (poolEntry == null) return null;
-                
-                foreach (var pooledObject in poolEntry.PooledObjects)
+                GameObject obj = poolEntry.ObjectPooler.Get();
+
+                if (obj)
                 {
-                    if (!pooledObject.gameObject.activeInHierarchy)
-                    {
-                        return pooledObject.gameObject;
-                    }
+                    obj.transform.SetParent(poolEntry.ParentObject.transform);
+                    obj.SetActive(true);
                 }
 
-                return !poolEntry.AutomaticGrowth ? null : CreateObject(poolEntry);
+                return obj;
             }
         }
-        
+
         private void Awake()
         {
             foreach (var poolEntry in PoolEntries)
             {
-                for (var i = 0; i < poolEntry.PoolAmount; i++)
+                poolEntry.ObjectPooler = new ObjectPool<GameObject>(() => CreateObject(poolEntry), null, null, (obj) => DestroyObject(obj, poolEntry));
+
+                // Populate initial objects
+                for (int i = 0; i < poolEntry.PoolAmount; i++)
                 {
-                    CreateObject(poolEntry);
+                    GameObject obj = poolEntry.ObjectPooler.Get();
+                    obj.SetActive(false);
                 }
             }
         }
-        
+
         private GameObject CreateObject(PoolEntry poolEntry)
         {
             if (poolEntry.PrefabObject == null)
@@ -68,62 +63,23 @@ namespace OpenYandere.Managers
                 return null;
             }
 
-            var instantinatedObject = poolEntry.ParentObject != null ? Instantiate(poolEntry.PrefabObject, poolEntry.ParentObject.transform) : Instantiate(poolEntry.PrefabObject);
-            instantinatedObject.SetActive(false);
+            var instantiatedObject = Instantiate(poolEntry.PrefabObject);
+            instantiatedObject.SetActive(false);
 
-            poolEntry.PooledObjects.Add(instantinatedObject);
-
-            if (!_isCoroutineActive && poolEntry.PooledObjects.Count > poolEntry.PoolAmount)
-            {
-                StartCoroutine(ClearExcess());
-                _isCoroutineActive = true;
-            }
-
-            return instantinatedObject;
+            return instantiatedObject;
         }
-        
-        private IEnumerator ClearExcess()
+
+        private void DestroyObject(GameObject obj, PoolEntry poolEntry)
         {
-            // Yield a few seconds before checking for the first time.
-            // Otherwise it would register the first object that goes over the limit
-            // then wait 60 seconds before registering any made on subsequent frames.
-            yield return new WaitForSeconds(3f);
+            Destroy(obj);
+        }
 
-            while (true)
+        public void ReturnToPool(GameObject obj, string name)
+        {
+            PoolEntry poolEntry = PoolEntries.Find(pooledObject => pooledObject.ObjectName == name);
+            if (poolEntry != null && poolEntry.ObjectPooler != null)
             {
-                var excessObjects = 0;
-
-                foreach (var poolEntry in PoolEntries)
-                {
-                    if (!poolEntry.AutomaticGrowth || poolEntry.PooledObjects.Count <= poolEntry.PoolAmount) continue;
-                    
-                    // Get the items that are over the allowed range.
-                    var autoPooledObjects = poolEntry.PooledObjects.GetRange(poolEntry.PoolAmount, ((poolEntry.PooledObjects.Count - 1) - (poolEntry.PoolAmount - 1)));
-
-                    // Add the number of extra objects on to the count
-                    excessObjects += autoPooledObjects.Count;
-
-                    // Remove the objects that aren't in use (disabled)
-                    foreach (var pooledObject in autoPooledObjects)
-                    {
-                        // Skip the if object is active.
-                        if (pooledObject.activeInHierarchy) continue;
-                        
-                        poolEntry.PooledObjects.Remove(pooledObject);
-                        Destroy(pooledObject);
-
-                        // Remove it from the excess count as it was removed.
-                        excessObjects -= 1;
-                    }
-                }
-
-                if (excessObjects == 0)
-                {
-                    _isCoroutineActive = false;
-                    break;
-                }
-
-                yield return new WaitForSeconds(60f);
+                poolEntry.ObjectPooler.Release(obj);
             }
         }
     }

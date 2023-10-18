@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenYandere.Managers.Traits;
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 

@@ -6,7 +6,7 @@ namespace OpenYandere.Managers
 {
     public class PlayerManager : MonoBehaviour
     {
-        private readonly MovementStateMachine _movementStateMachine = new MovementStateMachine();
+        private readonly MovementStateMachine _movementStateMachine = new();
         
         [Header("References:")]
         public GameObject Player;
