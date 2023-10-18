@@ -29,8 +29,7 @@ namespace OpenYandere.Characters.NPC
         }
         protected void Start()
         {
-            ClockSystem.Instance.OnTimeChanged += CheckActivity;
-
+            if (ClockSystem.Instance != null) { ClockSystem.Instance.OnTimeChanged += CheckActivity; }
             if (dailyRoutine.activities.Count > 0)
             {
                 dailyRoutine.activities[0].OnActivityStart(this);
