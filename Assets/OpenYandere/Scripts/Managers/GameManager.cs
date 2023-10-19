@@ -15,12 +15,15 @@ namespace OpenYandere.Managers
         public EquipmentManager equipmentManager;
         public void Resume()
         {
-            
+            Time.timeScale = 1f;
+            PlayerManager.PlayerMovement.UnblockMovement();
+
         }
 
         public void Pause()
         {
-            
+            PlayerManager.PlayerMovement.BlockMovement(); 
+            Time.timeScale = 0f;
         }
     }
 }

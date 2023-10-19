@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: 
   itemName: Knife
-  itemIcon: {fileID: 0}
+  itemDescription: Description here...
+  itemIcon: {fileID: 91597979, guid: d196547d265d52e4cae853b70ac046a1, type: 3}
   itemPrefab: {fileID: 919132149155446097, guid: fd35859431cdca94495152e154dfc668,
     type: 3}
   itemType: 2
+  itemValue: 0
+  itemRarity: 1
+  isConsumable: 0

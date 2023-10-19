@@ -26,9 +26,15 @@ namespace OpenYandere.Characters.Player.States
             // If the player is not moving switch to the standing state.
             return !input.IsMoving ? MovementState.Standing : MovementState.None;
         }
-
         public MovementState HandleUpdate(float deltaTime)
         {
+            _playerManager.StaminaManager.DrainStamina(deltaTime);
+
+            if (!_playerManager.StaminaManager.CanRun())
+            {
+                return MovementState.Walking; // Se a stamina acabar, voltar ao estado de caminhada
+            }
+
             return MovementState.None;
         }
     }

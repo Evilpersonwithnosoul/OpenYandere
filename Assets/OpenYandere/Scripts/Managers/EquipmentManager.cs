@@ -22,7 +22,7 @@ namespace OpenYandere.Managers
             foreach (var item in allItems)
             {
                 ObjectPool<GameObject> poolForItem = new(
-                    createFunc: () => Instantiate(item.itemPrefab),
+                    createFunc: () => Instantiate(item.ItemPrefab),
                     actionOnGet: (obj) => obj.SetActive(true),
                     actionOnRelease: (obj) => obj.SetActive(false),
                     actionOnDestroy: (obj) => Destroy(obj),
@@ -48,7 +48,7 @@ namespace OpenYandere.Managers
                 return;
             }
 
-            switch (item.itemType)
+            switch (item.Type)
             {
                 case ItemBase.ItemType.Helmet:
                     EquipItem(ref currentHelmet, item, helmetPosition);
@@ -67,16 +67,16 @@ namespace OpenYandere.Managers
             //PopupMessage.Instance.onDisplayMessage.Invoke($"Item {newItem.itemName} has been equipped");
             if (PopupMessage.Instance != null)
             {
-                PopupMessage.Instance.onDisplayMessage.Invoke("Visibly armed.");
+                PopupMessage.Instance.onDisplayMessage?.Invoke("Visibly armed.");
             }
             else
             {
                 Debug.LogWarning("PopupMessage instance is null.");
             }
             
-            if (newItem.itemPrefab == null)
+            if (newItem.ItemPrefab == null)
             {
-                Debug.LogWarning($"Item {newItem.itemName} does not have an associated prefab.");
+                Debug.LogWarning($"Item {newItem.ItemName} does not have an associated prefab.");
                 return;
             }
             if (currentItem != null)
@@ -87,7 +87,7 @@ namespace OpenYandere.Managers
             GameObject itemInstance = itemPools[newItem].Get();
             if (itemInstance == null)
             {
-                Debug.LogWarning($"Could not retrieve an instance of {newItem.itemName} from the ObjectPool.");
+                Debug.LogWarning($"Could not retrieve an instance of {newItem.ItemName} from the ObjectPool.");
                 return;
             }
 
@@ -100,7 +100,7 @@ namespace OpenYandere.Managers
 
         public void Unequip(ItemBase item)
         {
-            switch (item.itemType)
+            switch (item.Type)
             {
                 case ItemBase.ItemType.Helmet:
                     UnequipItem(helmetPosition);
@@ -127,7 +127,7 @@ namespace OpenYandere.Managers
                 unequippedItem.SetActive(false);
 
                 // Determine which item this GameObject represents
-                ItemBase correspondingItem = allItems.FirstOrDefault(item => item.itemPrefab == unequippedItem);
+                ItemBase correspondingItem = allItems.FirstOrDefault(item => item.ItemPrefab == unequippedItem);
 
                 if (correspondingItem != null && itemPools.ContainsKey(correspondingItem))
                 {

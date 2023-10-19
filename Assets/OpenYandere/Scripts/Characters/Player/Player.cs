@@ -19,9 +19,9 @@ namespace OpenYandere.Characters.Player
             // Exemplo: Desequipar o item atualmente equipado como arma ao pressionar a tecla Q
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                if (EquipmentManager.Instance.GetWeapon() == null && InventorySystem.Instance.items.Count > 0)
+                if (EquipmentManager.Instance.GetWeapon() == null && InventorySystem.Instance.GetItems().Count > 0)
                 {
-                    EquipmentManager.Instance.Equip(InventorySystem.Instance.items[0]);
+                    EquipmentManager.Instance.Equip(InventorySystem.Instance.GetItems()[0]);
                 }
                 else
                 {

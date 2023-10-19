@@ -13,6 +13,7 @@ internal class PopupMessage : Singleton<PopupMessage>
     protected RectTransform _rectTransform;
     protected CanvasGroup _canvasGroup;
     protected static TextMeshProUGUI messageText;
+    protected Queue<string> messageQueue = new();
     protected static Image messageIcon;
 
     public float displayTime = 2.3f;
@@ -24,7 +25,7 @@ internal class PopupMessage : Singleton<PopupMessage>
         onDisplayMessage ??= new UnityEvent<string>();
         onDisplayMessage.AddListener(DisplayMessage);
         _rectTransform = GetComponent<RectTransform>();
-        if (!TryGetComponent<CanvasGroup>(out _canvasGroup))
+        if (!TryGetComponent(out _canvasGroup))
         {
             _canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
@@ -44,24 +45,40 @@ internal class PopupMessage : Singleton<PopupMessage>
             }
         }
     }
-
     public void DisplayMessage(string message)
     {
-        _rectTransform.anchoredPosition = new Vector2(0, 200);
-        _rectTransform.DOKill();
-        _rectTransform.DOAnchorPosY(0, 0.5f).SetEase(Ease.OutQuad);
-        _canvasGroup.DOFade(1, 0.5f);
-        messageText.SetText(message);
-        timer = displayTime;
-        messageText.gameObject.SetActive(true);
-        isDisplaying = true;
+        messageQueue.Enqueue(message);
+        if (!isDisplaying)
+        {
+            ShowNextMessage();
+        }
     }
 
-    private void HideMessage()
+    private void ShowNextMessage()
+    {
+        if (messageQueue.Count > 0)
+        {
+            string message = messageQueue.Dequeue();
+            _rectTransform.anchoredPosition = new Vector2(0, 200);
+            _rectTransform.DOKill();
+            _rectTransform.DOAnchorPosY(0, 0.5f).SetEase(Ease.OutQuad);
+            _canvasGroup.DOFade(1, 0.5f);
+            messageText.SetText(message);
+            timer = displayTime;
+            messageText.gameObject.SetActive(true);
+            isDisplaying = true;
+        }
+    }
+    protected void HideMessage()
     {
         _canvasGroup.DOFade(0, 1.5f).OnComplete(() => {
             messageText.gameObject.SetActive(false);
             isDisplaying = false;
+            if (messageQueue.Count > 0)
+            {
+                ShowNextMessage();
+            }
         });
     }
+
 }

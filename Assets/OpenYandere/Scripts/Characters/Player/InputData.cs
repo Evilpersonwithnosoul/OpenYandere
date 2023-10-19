@@ -4,5 +4,7 @@
     {
         public bool IsMoving;
         public bool IsRunning;
+        public bool IsCrouching;
+        public bool IsAttacking;
     }
 }

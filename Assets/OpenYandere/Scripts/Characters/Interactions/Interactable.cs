@@ -55,6 +55,7 @@ namespace OpenYandere.Characters.Interactions
         }
         protected void LookAtObject()
         {
+            if (headIKTarget == null) return;
             // Defina uma posição alvo baseada na posição do objeto e um pequeno offset para ajuste
             Vector3 targetPosition = _attachTransform.position;
 
@@ -64,6 +65,7 @@ namespace OpenYandere.Characters.Interactions
 
         protected void ResetLook()
         {
+            if (headIKTarget == null) return;
             // Retorna o IK Target para sua posição original ou qualquer posição neutra que você desejar
             headIKTarget.position = Vector3.Lerp(headIKTarget.position, originalIKTargetPosition, Time.deltaTime * 5); // Ajuste a velocidade conforme necessário
         }
